@@ -1,0 +1,76 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[a4paper,top=1in,bottom=1in,left=0.8in,right=0.8in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\definecolor{cyanblue}{RGB}{0, 140, 200}
+\setstretch{1.1}
+\begin{document}
+
+\pagestyle{empty} % Start with empty page style
+
+\thispagestyle{fancy} % Apply fancy style only to the first page
+\fancyhf{} % Clear header and footer
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+
+\fancyhead[L]{% Left header
+        \includegraphics[width=8cm, height=1.7cm]{img3.png} 
+        }
+\fancyhead[R]{% Right header
+    Name: K.Saisusmitha  \\
+    Batch: COMETFWC018 \\
+    Date: 16 May 2025 } 
+    \vspace{1cm}
+\begin{center}
+
+    {\LARGE \textbf{\textcolor{cyanblue}{\\ PAIR OF LINEAR EQUATIONS\\ In TWO VARIABLES}}}
+\end{center}
+  \vspace{1cm}   
+\textbf{\textcolor{cyanblue}{Example 6:}}In a shop the cost of 2 pencils and 3 erasers is ₹9 and the cost of 4 pencils and 6 erasers is ₹18. Find the cost of each pencil and each eraser.
+
+\textbf{\textcolor{cyanblue}{Solution :}} The pair of linear equations formed were:
+\begin{align}
+2x + 3y &= 9 \tag{1}\\
+4x + 6y &= 18 \tag{2}
+\end{align}
+We first express the value of \( x \) in terms of \( y \) from Equation (1), to get
+\begin{align}
+x = \frac{9 - 3y}{2} \tag{3}
+\end{align}
+Now we substitute this value of \( x \) in Equation (2), to get
+\begin{align*}
+4 \left( \frac{9 - 3y}{2} \right) + 6y &= 18 \\
+18 - 6y + 6y &= 18 \\
+\Rightarrow 18 &= 18
+\end{align*}
+This statement is true for all values of \( y \). However, we do not get a specific value of \( y \) as a solution. Therefore, we cannot obtain a specific value of \( x \). This situation has arisen because both the given equations are the same. 
+Therefore, Equations (1) and (2) have infinitely many solutions. We cannot find a unique cost of a pencil and an eraser, because there are many common solutions to the given situation.
+
+\noindent
+\textbf{\textcolor{cyanblue}{Example 7:}}Two rails are represented by the equations:
+[
+x + 2y - 4 &= 0 \quad \text{and} \quad 2x + 4y - 12 &= 0 
+]
+will the rails cross each other?
+
+\textbf{\textcolor{cyanblue}{Solution :}}The pair of linear equations formed were:
+\begin{align}
+x + 24 -4 &=0 \tag{1}\\
+2x +4y -12 &=0 \tag{2}
+\end{align}
+ We express \( x \) in terms of \( y \) from Equation (1), to get
+\[
+x = 4 - 2y
+\]
+Now, we substitute this value of \( x \) in Equation (2), to get
+\begin{align*}
+2(4 - 2y) + 4y - 12 &= 0 \\
+8 - 4y + 4y - 12 &= 0 \\
+-4 &= 0 
+\end{align*}
+Which is a False statement.\\
+Therefore the  equations donot have a common solution.so,the rails will not cross each other. 
+
+\end{document}
