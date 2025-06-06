@@ -1,0 +1,93 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{tikz}
+\usetikzlibrary{circuits.logic.US, positioning}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{float}
+\definecolor{darkskyblue}{rgb}{0.0, 0.5, 1.0}
+\definecolor{skyblue}{RGB}{135, 206, 235}
+
+\geometry{a4paper, top=0.7in, left=1in, right=1in, bottom=1in}
+
+\begin{document}
+\pagestyle{empty} % Start with empty page style
+
+\thispagestyle{fancy} % Apply fancy style only to the first page
+\fancyhf{} % Clear header and footer
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+
+\fancyhead[L]{% Left header
+        \includegraphics[width=8cm, height=1.7cm]{img3.png} 
+                }
+
+\fancyhead[R]{% Right header
+    Name: K.Saisusmitha \\
+    Batch: COMETFWC018 \\
+    Date: 16 may 2025
+}
+\vspace{1cm}
+\begin{center}
+
+    {\LARGE \textbf{\textcolor{darkskyblue}{\\  GATE QUESTION \\ IN 2010 Q31}}}
+\end{center}
+
+\vspace{-1cm} %adjust vertical space
+\section*{\textcolor{blue}{\\Question}}
+
+\noindent\textbf{Q.42} The logic gate circuit shown in the adjoining figure realizes the function
+\vspace{0.5cm}
+
+\begin{center}
+    \includegraphics[width=0.65\textwidth]{i.jpg}
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent\textbf{Options:}
+\noindent
+(A) XOR \hfill (B) XNOR \hfill (C) Half adder \hfill (D) Full adder
+\section*{Solution:}
+
+\vspace{0.5em}
+
+The given circuit has two inputs: \( X \) and \( Y \).
+
+\vspace{0.5em}
+
+The circuit uses two \textbf{AND gates} and one \textbf{OR gate}.
+
+\vspace{0.5em}
+
+From the diagram, the inputs are connected to the AND gates in a crossed fashion:
+
+\begin{enumerate}
+  \item The first AND gate receives inputs \( X \) and \( \overline{Y} \) → Output: \( X \cdot \overline{Y} \)
+  \item The second AND gate receives inputs \( \overline{X} \) and \( Y \) → Output: \( \overline{X} \cdot Y \)
+\end{enumerate}
+
+The outputs of both AND gates are then connected to an OR gate, which gives:
+\[
+Z = (X \cdot \overline{Y}) + (\overline{X} \cdot Y)
+\]
+
+This is the standard Boolean expression for the \textbf{XOR} operation.
+
+\vspace{1em}
+
+\noindent Therefore, the circuit realizes the function:
+\[
+Z = X \oplus Y
+\]
+
+\vspace{0.3cm}
+\noindent\textbf{Answer:} (A) XOR
+
+\end{document}
+
